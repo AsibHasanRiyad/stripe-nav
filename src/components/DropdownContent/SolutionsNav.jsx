@@ -54,23 +54,23 @@ const useCase = [
 
 const SolutionsNav = () => {
   return (
-    <div>
-      <div className=" px-6 pt-10 pb-6 text-sm">
+    <div className=" text-base lg:text-sm">
+      <div className=" px-6 pt-10 pb-6 ">
         {/* by stage */}
         <div>
           <h1>BY STAGE</h1>
-          <div className=" grid grid-cols-2 items-center py-4 border-b border-dashed border-b-slate-200">
+          <div className=" grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-1 items-center py-4 border-b border-dashed border-b-slate-200">
             <h1 className=" flex items-center gap-2 cursor-pointer text-slate-500 hover:text-slate-900">
               <FaRocket /> <span className=" text-slate-900">Startups</span>{" "}
             </h1>
-            <h1 className="flex items-center gap-2 cursor-pointer text-slate-500 hover:text-slate-900">
+            <h1 className="flex items-center gap-2 cursor-pointer text-slate-500 mt-2 lg:mt-0 hover:text-slate-900">
               <FaBuilding /> <span className=" text-slate-900">Enterprise</span>{" "}
             </h1>
           </div>
         </div>
         {/* by use case */}
         <h1 className=" mt-4">BY USE CASE</h1>
-        <div className=" grid grid-cols-2 gap-3 cursor-pointer mt-3">
+        <div className=" grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-3 cursor-pointer mt-3">
           {useCase?.map((data, index) => (
             <div
               key={index}

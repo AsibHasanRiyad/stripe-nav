@@ -44,11 +44,11 @@ const useCase = [
 
 const ResourcesNav = () => {
   return (
-    <div>
-      <div className=" p-6 text-sm">
+    <div className="text-base lg:text-sm">
+      <div className=" p-6 ">
         {/* by use case */}
         <h1 className=" mt-4">BY USE CASE</h1>
-        <div className=" grid grid-cols-2 gap-3 cursor-pointer mt-3">
+        <div className=" grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-3 cursor-pointer mt-3">
           {useCase?.map((data, index) => (
             <div
               key={index}
@@ -63,7 +63,7 @@ const ResourcesNav = () => {
 
       {/* investigation and customer solution */}
       <div className=" py-5 px-5 mx-1.5 rounded-md bg-[#EFF3F8] mt-5">
-        <div className=" grid grid-cols-2 gap-3 cursor-pointer mt-3">
+        <div className=" grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-3 cursor-pointer mt-3">
           <p className=" flex items-center gap-2 cursor-pointer text-slate-500 hover:text-slate-900">
             {" "}
             <FaFirstAid /> <span className=" text-slate-900">Jobs</span>
