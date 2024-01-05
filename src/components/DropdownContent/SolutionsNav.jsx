@@ -55,7 +55,7 @@ const useCase = [
 const SolutionsNav = () => {
   return (
     <div>
-      <div className=" p-6 text-sm">
+      <div className=" px-6 pt-10 pb-6 text-sm">
         {/* by stage */}
         <div>
           <h1>BY STAGE</h1>
@@ -84,7 +84,7 @@ const SolutionsNav = () => {
       </div>
 
       {/* investigation and customer solution */}
-      <div className=" py-5 px-5 mx-1.5 rounded-md bg-gray-100 mt-5">
+      <div className=" py-5 px-5 mx-1.5 rounded-md bg-[#EFF3F8] mt-5">
         <p className=" uppercase mt-5">Investigation and customer solution</p>
         <div className=" grid grid-cols-2 gap-3 cursor-pointer mt-3">
           <p className=" flex items-center gap-2 cursor-pointer text-slate-500 hover:text-slate-900">

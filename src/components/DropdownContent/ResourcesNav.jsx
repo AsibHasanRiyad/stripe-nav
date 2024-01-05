@@ -62,7 +62,7 @@ const ResourcesNav = () => {
       </div>
 
       {/* investigation and customer solution */}
-      <div className=" py-5 px-5 mx-1.5 rounded-md bg-gray-100 mt-5">
+      <div className=" py-5 px-5 mx-1.5 rounded-md bg-[#EFF3F8] mt-5">
         <div className=" grid grid-cols-2 gap-3 cursor-pointer mt-3">
           <p className=" flex items-center gap-2 cursor-pointer text-slate-500 hover:text-slate-900">
             {" "}
