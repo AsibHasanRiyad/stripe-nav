@@ -68,20 +68,20 @@ const Navbar = () => {
               </li>{" "}
             </ul>
             {/* contact and sign in  */}
-            <ul className=" flex flex-col lg:flex-row  pl-5 lg:pl-0 lg:items-center justify-end gap-10 mt-10 lg:mt-0">
+            <ul className=" flex flex-col lg:flex-row   lg:items-center justify-end gap-10 mt-10 lg:mt-0">
               <li
                 onMouseEnter={handleContactMouseEnter}
                 onMouseLeave={handleContactMouseLeave}
-                className=" flex items-center gap-1 hover:text-gray-200 transition-colors duration-200 cursor-pointer "
+                className=" pl-5 lg:pl-0 flex items-center gap-1 hover:text-gray-200 transition-colors duration-200 cursor-pointer "
               >
                 Contact Sales{" "}
                 {isContactHovered ? <IoArrowForward /> : <IoIosArrowForward />}{" "}
               </li>
-              <div className=" flex justify-center items-center lg:block">
+              <div className=" bg-[#F7F9FB] lg:bg-transparent py-4 mx-1.5 flex justify-center items-center lg:block mt-[52px] rounded-md lg:mt-0">
                 <li
                   onMouseEnter={handleSignInMouseEnter}
                   onMouseLeave={handleSignInMouseLeave}
-                  className=" flex items-center gap-1 hover:text-gray-200  cursor-pointer bg-gray-300/20 pr-3 pl-5 py-1.5 rounded-full mt-10 lg:mt-0"
+                  className=" flex items-center gap-1 text-white lg:hover:text-gray-200 cursor-pointer bg-[#635AFF] lg:bg-gray-300/20 pr-3 pl-5 py-1.5 rounded-full "
                 >
                   Sign in{" "}
                   {isSignInHovered ? <IoArrowForward /> : <IoIosArrowForward />}

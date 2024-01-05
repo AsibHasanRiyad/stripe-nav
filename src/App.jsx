@@ -6,6 +6,7 @@ const App = () => {
       <div className="max-w-[1440px] mx-auto">
         <Navbar />
       </div>
+      <div className=" mt-96 h-screen"></div>
     </div>
   );
 };
