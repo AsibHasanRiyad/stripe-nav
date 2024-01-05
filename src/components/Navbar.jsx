@@ -3,6 +3,8 @@ import { IoIosArrowForward } from "react-icons/io";
 import { IoArrowForward, IoMenu } from "react-icons/io5";
 import { RxCross2 } from "react-icons/rx";
 import ProductsNav from "./DropdownContent/ProductsNav";
+import SolutionsNav from "./DropdownContent/SolutionsNav";
+import ResourcesNav from "./DropdownContent/ResourcesNav";
 const Navbar = () => {
   const [isContactHovered, setIsContactHovered] = useState(false);
   const [isSignInHovered, setIsSignInHovered] = useState(false);
@@ -57,7 +59,7 @@ const Navbar = () => {
                   Products
                 </a>
                 <div className=" absolute top-0 left-0 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 w-full lg:min-w-[560px] transform">
-                  <div className=" relative -left-32 top-6 p-6 bg-white text-black rounded-xl shadow-xl w-full">
+                  <div className=" relative -left-2 lg:-left-32 top-6 p-6 bg-white text-black rounded-xl shadow-xl w-full">
                     <div className=" w-10 h-10 bg-white transform rotate-45 absolute top-0 -left-14 z-0 translate-x-0 transition-transform group-hover:translate-x-[12rem] duration-500 ease-in-out rounded-sm"></div>
                     <ProductsNav />
                   </div>
@@ -69,17 +71,26 @@ const Navbar = () => {
                   Solutions
                 </a>
                 <div className=" absolute top-0 left-0 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 w-full lg:min-w-[560px] transform">
-                  <div className=" relative -left-32 top-6 p-6 bg-white text-black rounded-xl shadow-xl w-full">
+                  <div className=" relative -left-2 lg:-left-32 top-6 bg-white text-black rounded-xl shadow-xl w-full">
                     <div className=" w-10 h-10 bg-white transform rotate-45 absolute top-0 -left-14 z-0 translate-x-0 transition-transform group-hover:translate-x-[12rem] duration-500 ease-in-out rounded-sm"></div>
-                    <ProductsNav />
+                    <SolutionsNav />
                   </div>
                 </div>
               </li>
               <li className="hover:opacity-70  cursor-default">
                 <a href="#">Developers</a>
               </li>
-              <li className="hover:opacity-70  cursor-default">
-                <a href="#">Resources</a>
+              {/* resources */}
+              <li className="relative group">
+                <a className="hover:opacity-70 cursor-default" href="#">
+                  Resources
+                </a>
+                <div className=" absolute top-0 -left-10 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 w-full lg:min-w-[490px] transform">
+                  <div className=" relative left-8 lg:-left-32 top-6 bg-white text-black rounded-xl shadow-xl w-full">
+                    <div className=" w-10 h-10 bg-white transform rotate-45 absolute top-0 -left-2 z-0 translate-x-0 transition-transform group-hover:translate-x-[12rem] duration-500 ease-in-out rounded-sm"></div>
+                    <ResourcesNav />
+                  </div>
+                </div>
               </li>
               <li className="hover:opacity-70  cursor-pointer">
                 <a href="#">Pricing</a>

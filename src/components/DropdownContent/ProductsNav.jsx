@@ -676,7 +676,7 @@ const ProductsNav = () => {
   };
 
   return (
-    <div className=" grid grid-cols-2 gap-8 mt-4 pr-5">
+    <div className=" grid grid-cols-1 md:grid-cols-2 gap-8 mt-4 pr-5 pb-10">
       {productsData.map((product, index) => (
         <div
           onMouseEnter={() => handleMouseEnter(index)}
